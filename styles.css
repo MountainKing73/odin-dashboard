@@ -80,7 +80,7 @@
 }
 
 #header {
-  background-color: red;
+  background-color: #fff;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
@@ -127,6 +127,37 @@
   height: 36px;
   width: 36px;
   border-radius: 50%;
+}
+
+#submenu {
+  display: grid;
+  grid-template-columns: .5fr 4fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-top: 20px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  margin-right: 20px;
+  align-items: center;
+}
+
+#submenu img {
+  height: 48px;
+  width: 48px;
+}
+
+#welcome {
+  font-height: 12px;
+  margin: 0px;
+}
+
+#submenu-name {
+  font-size: 24px;
+  margin: 0px;
+}
+
+#submenu button {
+  border-radius: 22px;
+  height: 36px;
 }
 
 #main-content {
