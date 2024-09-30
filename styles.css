@@ -5,6 +5,13 @@
     url("fonts/roboto-regular-webfont.woff") format("woff");
 }
 
+@font-face {
+  font-family: "robotobold";
+  src:
+    url("fonts/roboto-bold-webfont.woff2") format("woff2");
+    url("fonts/roboto-bold-webfont.woff") format("woff");
+}
+
 #container {
   width: 100vw;
   height: 100vh;
@@ -171,14 +178,70 @@
 
 #projects {
   background-color: yellow;
+  margin: 40px 20px 40px 20px;
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.section-title {
+  grid-column: span 2;
+}
+
+.project {
+  border-radius: 12px;
+  padding: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 16px 70% 14px;
+}
+
+.project .title {
+  font-size: 14px;
+  font-family: "robotobold", serif;
+}
+
+.project .description {
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.project svg {
+  width: 16px;
+  height: 16px;
+}
+
+.project .buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.project .buttons svg {
+  padding-right: 10px;
 }
 
 #announcements {
   background-color: purple;
+  margin: 40px 20px 40px 20px;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40px 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.announcement .title {
+  font-size: 12px;
+  font-family: "robotobold", serif;
+}
+
+.announcement .description {
+  padding-top: 5px;
+  font-size: 12px;
 }
 
 #trending {
